@@ -1,0 +1,19 @@
+DiffUNet Denoising Results
+===========================
+
+Value Ranges:
+Noisy Input: 0.000 to 1.000
+Ground Truth: 0.000 to 1.000
+Raw Reconstruction: 0.077 to 0.931
+Enhanced Output: 0.000 to 1.000
+
+Metrics:
+Raw PSNR: 9.06 dB
+Raw SSIM: -0.0069
+Enhanced PSNR: 7.75 dB
+Enhanced SSIM: -0.0106
+L2 Error (Raw): 61.042
+L2 Error (Enhanced): 70.999
+
+Total training time: 0h 0m 5s
+Total training time in seconds: 5.13s

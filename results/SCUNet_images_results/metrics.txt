@@ -1,0 +1,5 @@
+SCUNet Denoising Results
+=======================
+PSNR: 10.95 dB
+SSIM: 0.0520
+L2 Error: 49.083

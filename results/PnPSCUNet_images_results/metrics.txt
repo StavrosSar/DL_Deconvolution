@@ -1,0 +1,10 @@
+PnP-SCUNet Results
+==================
+
+Training time: 0h 0m 17s
+
+Sample Evaluation Metrics:
+------------------------------
+PSNR: 15.96 dB
+SSIM: 0.0835
+L2 Error: 27.590
