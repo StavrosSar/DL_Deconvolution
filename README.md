@@ -11,19 +11,19 @@ This repository contains the code and resources for my thesis project.
 
 The Anaconda environment used for this project can be downloaded and installed from the link below. This ensures all dependencies and correct versions are installed.
 
-**Download Environment:** [Mega.nz Link](https://mega.nz/folder/VgkhzC5R#BCabPqdQoR5U8JGf-T-9vg)
+**Download Environment:** [Anaconda Envieroment](https://mega.nz/folder/VgkhzC5R#BCabPqdQoR5U8JGf-T-9vg)
 
 ## Datasets
 
 The datasets required to train and/or evaluate the models are available at the following link:
 
-**Download Datasets:** [Mega.nz Link](https://mega.nz/folder/5hVSBQ7B#-cOb0xHCxL02CAQ--G95Qg)
+**Download Datasets:** [Datasets](https://mega.nz/folder/5hVSBQ7B#-cOb0xHCxL02CAQ--G95Qg)
 
 ## Pre-trained Models
 
 A pre-trained checkpoint for the SUNet model is available for download.
 
-**Download SUNet Checkpoint:** [Mega.nz Link](https://mega.nz/folder/t5VEBDbR#LfVZjKI4emF9my-VziAetQ)
+**Download SUNet Checkpoint:** [Pretrained path](https://mega.nz/folder/t5VEBDbR#LfVZjKI4emF9my-VziAetQ)
 
 ## Usage
 
