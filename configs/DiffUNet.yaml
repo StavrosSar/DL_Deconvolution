@@ -1,0 +1,36 @@
+# DiffUNet Configuration File
+
+physics:
+  noise_level: 0.05          # Standard deviation of Gaussian noise
+  device: "cuda:0"           # Training device (use "cpu" if no GPU)
+
+data:
+  x_train_path: "../tr/x_train.npy"   # Path to training inputs
+  y_train_path: "../tr/y_train.npy"   # Path to training targets
+  subset_size: 500                       # Number of samples to use (set -1 for full dataset)
+
+train:
+  batch_size: 8
+  train_split: 0.8          # 80% training, 20% validation
+  epochs: 200
+  learning_rate: 0.001
+  weight_decay: 1e-8
+  grad_clip: 1.0
+  loss: "SupLoss"           # Options: "SupLoss" (currently implemented)
+
+  scheduler:
+    type: "StepLR"          # Options: "StepLR", "CosineAnnealingLR"
+    step_size: 160          # Used if StepLR
+    gamma: 0.1              # Used if StepLR
+
+model:
+  name: "DiffUNet"
+  in_channels: 1
+  out_channels: 1
+  num_filters: 64
+  num_res_blocks: 2
+  attention_resolutions: "16"   # Can be a string or list
+  dropout: 0.1
+
+results:
+  save_dir: "../results/DiffUNet_images_results"

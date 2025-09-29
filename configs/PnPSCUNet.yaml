@@ -1,0 +1,24 @@
+data:
+  x_train_path: "C:/Users/user/Desktop/tr/x_train.npy"
+  y_train_path: "C:/Users/user/Desktop/tr/y_train.npy"
+  subset_size: 500
+
+train:
+  batch_size: 4  # Reduced from 8 for memory safety
+  epochs: 25
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  eta_min: 0.000001
+  grad_clip: 1.0
+  train_split: 0.8
+
+algo:
+  max_iter: 3  # Reduced from 5 for memory safety
+  trainable_params: ["stepsize", "beta"]
+  params_algo:
+    stepsize: [1.0, 0.8, 0.6]  # Updated to match max_iter
+    g_param: [0.1, 0.1, 0.1]   # Updated to match max_iter
+    beta: 0.5
+
+physics:
+  sigma: 0.00001

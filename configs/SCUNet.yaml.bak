@@ -1,0 +1,12 @@
+data:
+  x_path: "C:/Users/user/Desktop/tr/x_train.npy"
+  y_path: "C:/Users/user/Desktop/tr/y_train.npy"
+  subset_size: 500
+  train_split: 0.8    # Add this, used for train/test split
+
+training:
+  batch_size: 4
+  epochs: 100
+  lr: 0.001
+  weight_decay: 0.0001
+  early_stop: True

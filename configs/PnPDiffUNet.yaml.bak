@@ -1,0 +1,42 @@
+# config.yaml
+data:
+  x_path: "C:/Users/user/Desktop/tr/x_train.npy"   # Ground Truth
+  y_path: "C:/Users/user/Desktop/tr/y_train.npy"   # Noisy Input
+  subset_size: 500
+  batch_size: 2
+  train_split: 0.8
+
+training:
+  epochs: 25
+  learning_rate: 0.0005
+  weight_decay: 0.0001
+  scheduler: "cosine"
+  grad_clip: 1.0
+  early_stop: true
+
+unfolded:
+  max_iter: 5
+  stepsize: [1.0, 0.8, 0.6, 0.4, 0.2]
+  g_param: [0.1, 0.1, 0.1, 0.1, 0.1]
+  beta: 0.5
+  trainable_params: ["stepsize", "beta"]
+
+model:
+  in_channels: 3
+  out_channels: 3
+  pretrained: null
+
+physics:
+  sigma: 0.00001
+
+loss:
+  type: "R2RLoss"
+
+metrics:
+  - SSIM
+  - PSNR
+
+visualization:
+  plot_images: true
+  wandb_vis: false
+  colormap: "inferno"

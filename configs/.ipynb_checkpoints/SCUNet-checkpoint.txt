@@ -1,0 +1,15 @@
+device: "cuda:0"
+
+data:
+  x_train_path: "../tr/x_train.npy"
+  y_train_path: "../tr/y_train.npy"
+  subset_size: 500
+
+physics:
+  noise_sigma: 0.00001
+
+training:
+  batch_size: 8
+  epochs: 200
+  lr: 0.001
+  weight_decay: 0.0001
