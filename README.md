@@ -45,13 +45,12 @@ In order to run and test the SCUNet-model:
 
 ## Project Structure
 
-[ The structure of the Project is this:]
-├── data/ # Directory for datasets (not included in repo)
-├── configs/ # yaml files
-├── results/ # The deconvolved images after test
-├── scripts/ # Models 
-├── DL_Deconv_GUI.py.py # The main GUI
-└── full_requirements.txt # Libraries
+- `data/` - Directory for datasets (not included in repo)
+- `configs/` - YAML configuration files  
+- `results/` - Deconvolved images after testing
+- `scripts/` - Model scripts
+- `DL_Deconv_GUI.py` - Main GUI application
+- `full_requirements.txt` - Python dependencies and libraries
 
 ## Acknowledgments
 
